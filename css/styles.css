@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgb(46.75, 46.75, 46.75);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 2px solid #00bcd4;
+}
+header h1 {
+  margin: 5px 0;
+  font-size: 1.8em;
+}
+header p {
+  font-size: 1em;
+  margin: 0;
+  opacity: 0.9;
+}
+
+main {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+main section {
+  margin-bottom: 30px;
+  text-align: center;
+}
+main section p {
+  line-height: 1.5;
+  margin: 0 auto;
+  max-width: 600px;
+}
+main section:not(:first-child) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 15px;
+}
+main section:not(:first-child) > div {
+  background-color: white;
+  border: 2px solid #222;
+  border-radius: 5px;
+  padding: 8px;
+  width: 200px;
+  height: 250px;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+main section:not(:first-child) > div:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+main section:not(:first-child) > div img {
+  width: 100%;
+  height: 120px;
+  object-fit: contain;
+  border-radius: 5px;
+  margin-bottom: 6px;
+}
+main section:not(:first-child) > div h3 {
+  margin: 5px 0 3px 0;
+  font-size: 0.95em;
+}
+main section:not(:first-child) > div p, main section:not(:first-child) > div h4 {
+  margin: 3px 0;
+  color: #00bcd4;
+  font-size: 0.85em;
+}
+main section:not(:first-child) > div button {
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.8em;
+  transition: background 0.2s;
+}
+main section:not(:first-child) > div button:hover {
+  background-color: rgb(0, 142.7735849057, 161);
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+  width: 100%;
+}
+
+/*# sourceMappingURL=styles.css.map */

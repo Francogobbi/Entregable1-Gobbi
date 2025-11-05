@@ -1,0 +1,138 @@
+// VARIABLES
+
+$color-principal: #00bcd4;
+$color-fondo: #f5f5f5;
+$color-texto: #333;
+$color-header: #222;
+$border-radius: 5px;
+$gap-productos: 15px;
+$alto-producto: 250px;
+$ancho-producto: 200px;
+$container-max-width: 900px;
+
+
+// ESTILOS GENERALES
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: $color-fondo;
+  color: $color-texto;
+  margin: 0;
+  padding: 0;
+}
+
+
+// HEADER
+
+header {
+  background-color: lighten($color-header, 5%);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 2px solid $color-principal;
+
+  h1 {
+    margin: 5px 0;
+    font-size: 1.8em;
+  }
+
+  p {
+    font-size: 1em;
+    margin: 0;
+    opacity: 0.9;
+  }
+}
+
+
+// MAIN
+
+main {
+  padding: 20px;
+  max-width: $container-max-width;
+  margin: 0 auto; 
+
+  section {
+    margin-bottom: 30px;
+    text-align: center;
+
+    p {
+      line-height: 1.5;
+      margin: 0 auto;
+      max-width: 600px;
+    }
+
+    // SECCION DE PRODUCTOS 
+    &:not(:first-child) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: $gap-productos;
+
+      > div {
+        background-color: white;
+        border: 2px solid $color-header;
+        border-radius: $border-radius;
+        padding: 8px;
+        width: $ancho-producto;
+        height: $alto-producto;
+        box-sizing: border-box;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: transform 0.2s, box-shadow 0.2s;
+
+        &:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        img {
+          width: 100%;
+          height: 120px;
+          object-fit: contain;
+          border-radius: $border-radius;
+          margin-bottom: 6px;
+        }
+
+        h3 {
+          margin: 5px 0 3px 0;
+          font-size: 0.95em;
+        }
+
+        p, h4 {
+          margin: 3px 0;
+          color: $color-principal;
+          font-size: 0.85em;
+        }
+
+        button {
+          background-color: $color-principal;
+          color: white;
+          border: none;
+          padding: 5px 8px;
+          border-radius: $border-radius;
+          cursor: pointer;
+          font-size: 0.8em;
+          transition: background 0.2s;
+
+          &:hover {
+            background-color: darken($color-principal, 10%);
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// FOOTER
+
+footer {
+  background-color: $color-header;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+  width: 100%;
+}
