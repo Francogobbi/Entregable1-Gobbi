@@ -1,0 +1,15 @@
+[
+  { "id": 1, "nombre": "Auriculares Inalámbricos Pro", "precio": 89.99, "img": "img/Auriculares1.jpg" },
+  { "id": 2, "nombre": "Auriculares Gaming X500", "precio": 79.99, "img": "img/Auriculares2.png" },
+  { "id": 3, "nombre": "Auriculares Bluetooth Compact", "precio": 49.99, "img": "img/Auriculares3.jpg" },
+  { "id": 4, "nombre": "Ratón Gamer X200 RGB", "precio": 49.99, "img": "img/Raton1.jpg" },
+  { "id": 5, "nombre": "Ratón Inalámbrico Slim", "precio": 29.99, "img": "img/Raton2.jpg" },
+  { "id": 6, "nombre": "Ratón Ergonómico Comfort Pro", "precio": 39.99, "img": "img/Raton3.jpg" },
+  { "id": 7, "nombre": "Ratón Gamer HyperSpeed", "precio": 59.99, "img": "img/Raton4.jpg" },
+  { "id": 8, "nombre": "Teclado Mecánico RGB Pro", "precio": 89.99, "img": "img/Teclado1.jpg" },
+  { "id": 9, "nombre": "Teclado Inalámbrico Compact", "precio": 49.99, "img": "img/Teclado2.jpg" },
+  { "id": 10, "nombre": "Teclado Gamer UltraSpeed", "precio": 69.99, "img": "img/Teclado3.jpg" },
+  { "id": 11, "nombre": "Teclado Ergonómico OfficePro", "precio": 59.99, "img": "img/Teclado4.jpg" },
+  { "id": 12, "nombre": "Monitor Gamer UltraWide 34", "precio": 399.99, "img": "img/Monitor1.jpg" },
+  { "id": 13, "nombre": "Monitor Profesional 27 4K", "precio": 349.99, "img": "img/Monitor2.jpg" }
+]
